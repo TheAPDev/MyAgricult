@@ -26,27 +26,26 @@ const features = [
 
 const Features: React.FC = () => {
   return (
-    <section className="mb-20">
-      <div className="text-center mb-12">
-        <h2 className="text-2xl md:text-3xl font-semibold text-forest-800 mb-4">
+    <section className="mb-12 sm:mb-20">
+      <div className="text-center mb-8 sm:mb-12 px-2">
+        <h2 className="text-lg sm:text-2xl md:text-3xl font-semibold text-forest-800 mb-3 sm:mb-4">
           What We're Building
         </h2>
       </div>
-      
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`group bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-delay-2 feature-delay-${index + 1}`}
+            className={`group bg-white/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-delay-2 feature-delay-${index + 1}`}
           >
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <feature.icon className="w-8 h-8 text-white" />
+            <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <feature.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-forest-800 leading-tight">
+              <h3 className="text-base sm:text-lg font-semibold text-forest-800 leading-tight">
                 {feature.title}
               </h3>
-              <p className="text-forest-600 text-sm leading-relaxed">
+              <p className="text-forest-600 text-xs sm:text-sm leading-relaxed">
                 {feature.description}
               </p>
             </div>

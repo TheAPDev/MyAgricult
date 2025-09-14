@@ -21,19 +21,19 @@ export default function EmailForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 max-w-md mx-auto">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-2 sm:gap-3 max-w-full sm:max-w-md mx-auto px-2">
       <input
         type="email"
         placeholder="Enter your email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="border p-2 rounded"
+        className="border p-2 sm:p-3 rounded text-base sm:text-lg"
       />
-      <button type="submit" className="bg-green-600 text-white py-2 px-4 rounded">
+      <button type="submit" className="bg-green-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded text-base sm:text-lg">
         Submit
       </button>
-      {message && <p>{message}</p>}
+      {message && <p className="text-xs sm:text-base mt-1">{message}</p>}
     </form>
   );
 }
