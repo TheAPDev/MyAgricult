@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animation delays for background blobs */
+.delay-2s {
+	animation-delay: 2s;
+}
+.delay-4s {
+	animation-delay: 4s;
+}
+
+/* Animation delay for Features cards */
+.feature-delay-1 { animation-delay: 200ms; }
+.feature-delay-2 { animation-delay: 400ms; }
+.feature-delay-3 { animation-delay: 600ms; }
+.feature-delay-4 { animation-delay: 800ms; }
+

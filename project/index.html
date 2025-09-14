@@ -7,6 +7,39 @@
     <title>MyAgricult - Coming Soon</title>
     <meta name="description" content="MyAgricult - The Green Cult of the Future. Bridging the gap between hobby gardeners and commercial farmers with digital guidance and smart insights." />
     <style>
+      body {
+        opacity: 0;
+        animation: fadeInBody 0.5s ease-out 0.1s forwards;
+      }
+      @keyframes fadeInBody {
+        to {
+          opacity: 1;
+        }
+      }
+      .animate-fade-in,
+      .animate-fade-in-delay-1,
+      .animate-fade-in-delay-2,
+      .animate-fade-in-delay-3,
+      .animate-fade-in-delay-4 {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyAgricult - Coming Soon</title>
+    <meta name="description" content="MyAgricult - The Green Cult of the Future. Bridging the gap between hobby gardeners and commercial farmers with digital guidance and smart insights." />
+    <style>
       /* Initial loading state */
       body {
         opacity: 0;
