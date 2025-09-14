@@ -37,8 +37,7 @@ const Features: React.FC = () => {
         {features.map((feature, index) => (
           <div 
             key={index}
-            className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-delay-2"
-            style={{ animationDelay: `${(index + 1) * 200}ms` }}
+            className={`group bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-delay-2 feature-delay-${index + 1}`}
           >
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
