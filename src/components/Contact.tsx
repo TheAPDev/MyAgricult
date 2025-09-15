@@ -12,8 +12,8 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "aayushmaanpandab@gmail.com",
-      href: "mailto:aayushmaanpandab@gmail.com"
+  value: "myagricult@gmail.com",
+  href: "mailto:myagricult@gmail.com"
     },
     {
       icon: MapPin,
