@@ -56,9 +56,9 @@ const NotifyMe: React.FC = () => {
           MyAgricult
         </h1>
         <h2 className="text-xl sm:text-2xl font-bold text-center text-green-900 mb-2 sm:mb-3 tracking-tight">
-          The Green Cult of the Future
+          "The Green Cult of the Future"
         </h2>
-        <div className="text-lg sm:text-xl text-green-700 font-semibold mb-4">Coming Soon</div>
+  <div className="text-lg sm:text-xl text-green-700 font-semibold mb-4">Coming Soon</div>
         <p className="text-base sm:text-lg text-center text-green-700 mb-8 font-normal max-w-full mx-auto">
           Bridging Gardens to Farms with Digital Guidance, Smart Insights, and a Connected Ecosystem.
         </p>
